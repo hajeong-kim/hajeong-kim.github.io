@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html long="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로그인페이지</title>
+    <style>
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration:none; color:inherit;}
+
+.gnb{
+	width:100%;
+	height:80px;
+	background-color:#63F;
+	color:#FFF;
+}
+.nav{
+	float:inherit;
+	margin-right:100px;	
+}
+.nav > li{
+	float:left;	
+	margin-left:100px;
+	line-height:80px;
+}
+
+.wrap{
+	width:100%;
+	margin:auto;	
+}
+
+
+.login{
+	width:500px;
+	height:470px;
+	margin:auto;
+	margin-top:50px;
+	text-align:center;
+	border:1px solid #666;
+}
+h1{
+	font-weight:bold;
+	padding-top:30px;
+	color:#63F;
+}
+form{
+	width:80%;
+	padding:30px 10px;
+	text-align:center;
+	margin:auto;
+	border-bottom:1px solid #999;
+	overflow:hidden;	
+}
+input[type=text], input[type=password]{
+	width:100%;
+	height:30px;
+}
+input[type=checkbox]{
+	float:left;
+	margin-top:5px;
+	position:relative;
+}
+b{float:left; padding-top:5px; font-size:12px; font-weight:lighter;}
+
+#l{float:right; padding-top:5px; padding-bottom:5px; font-size:12px;color:#63F;}
+#l:hover{color:#366;}
+#p{float:right; padding-top:5px; padding-bottom:5px; font-size:12px;color:#63F;}
+#p:hover{color:#366;}
+#log{width:100%; height:35px; margin-top:5px; text-align:center; cursor:pointer; color:#FFF; background-color:#63f;}
+#log:hover{background-color:#396;}
+#log:active{background-color:#366;}
+#bu{
+	width:80%;
+	padding-top:30px;
+	padding-left:10px;
+	text-align:center;
+	margin:auto;
+	overflow:hidden;
+}
+#bu > #f { width:180px;; height:35px; font-size:12px; text-align:center; padding-bottom:5px; cursor:pointer; color:#FFF; background-color:#06C;}
+#bu > #i { width:180px;; height:35px; font-size:12px; text-align:center; padding-bottom:5px; cursor:pointer; color:#FFF; background-color:#F30;}
+#m{position:absolute; padding:10px 30px; margin-top:-100px; margin-left:47%; cursor:pointer; color:#FFF; background-color:#63f;}
+.nav>li:hover{color:#376}
+#m:hover{background-color:#396;}
+#m:active{background-color:#366;}
+    </style>
+</head>
+
+<body>
+    <div class="gnb">
+        <div class="wrap">
+            <ul class="nav">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">BOARD</a></li>
+                <li><a href="#">ALBUM</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="login">
+        <h1>로그인</h1>
+                <form>
+                    <input type="text" placeholder="아이디" required>
+                    <p id="l"><a href="#">내 계정 찾기</a></p>
+                    <input type="password" placeholder="비밀번호" required>
+                    <b><input type="checkbox">로그인 상태유지</b><p id="p"><a href="#">패스워드 찾기</a></p>
+                    <button id="log">로그인</button>
+                </form>
+        <a id="bu">
+            <a href="https://www.facebook.com"><button id="f"><img src="./img/fb.png" style="width:25px; height:25px;">Log in with Facebook</button></a>
+            <a href="https://www.instagram.com"><button id="i"><img src="./img/ist.png" width="50" style="width:25px; height:25px;">Log in with Google+</button></a>
+        </div>
+        <button id="m">회원가입</button>
+    </div>
+
+</body>
+
+</html>
